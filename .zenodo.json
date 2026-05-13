@@ -1,0 +1,26 @@
+{
+  "title": "PrimeReplace Atlas: transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses",
+  "description": "All-mapped transcript-unit architecture browser and source tables for interpreting mutation-agnostic large-fragment replacement hypotheses. This is a pre-implementation resource and does not predict editing efficiency, therapeutic efficacy, safety, patient coverage, or final implementation mode.",
+  "creators": [
+    {
+      "name": "TBD",
+      "affiliation": "TBD"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "ClinVar",
+    "MANE",
+    "GENCODE",
+    "transcript architecture",
+    "large-fragment replacement",
+    "genome editing"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/best916116-crypto/PrimeReplace.git",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

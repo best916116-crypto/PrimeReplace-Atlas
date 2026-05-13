@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>Methods · PrimeReplace Atlas</title>
+<link rel="stylesheet" href="assets/style.css?v=v5.1_clean_link_fixed">
+</head>
+<body>
+<nav class="topnav"><div class="brand">PrimeReplace Atlas</div><div class="links"><a href="index.html">Overview</a><a href="start_here.html">Start</a><a href="gene_search.html">Gene search</a><a href="all_gene_index.html">Gene index</a><a href="opportunity_units.html">Units</a><a href="architecture_classes.html">Classes</a><a href="methods.html">Methods</a><a href="glossary.html">Glossary</a><a href="downloads.html">Downloads</a></div></nav>
+<main class="container">
+
+<h1>Methods</h1>
+<p>This page gives the minimal browser-facing methods needed to interpret the output.</p>
+<h2>Resource stack</h2>
+<table><tbody>
+<tr><th>Genome</th><td>GRCh38 / GRCh38.p14 coordinate context</td></tr>
+<tr><th>Transcript anchor</th><td>MANE Select</td></tr>
+<tr><th>Transcript structure</th><td>GENCODE v49 exon/CDS/UTR annotation</td></tr>
+<tr><th>Variant records</th><td>ClinVar GRCh38 pathogenic / likely pathogenic records</td></tr>
+</tbody></table>
+<h2>Transcript units</h2>
+<p>The browser summarizes three unit types: single exon, adjacent exon block, and downstream-CDS boundary hypotheses.</p>
+<h2>Record coverage</h2>
+<p>For a transcript unit, ClinVar record coverage is k/N, where N is the number of gene-level ClinVar P/LP records and k is the number addressed by the unit definition.</p>
+<h2>Interpretation gates</h2>
+<table><tbody>
+<tr><th>Low-record-burden</th><td>&lt;20 ClinVar P/LP records. Genes are shown but interpretation is limited.</td></tr>
+<tr><th>Compact payload bin</th><td>≤5 kb, used as a descriptive payload bin only.</td></tr>
+<tr><th>Large-payload bin</th><td>&gt;20 kb, used as a donor-burden descriptor only.</td></tr>
+</tbody></table>
+<p class="note">These gates are interpretation aids, not editing feasibility rules.</p>
+
+</main>
+<footer class="footer">PrimeReplace Atlas Browser v5.1_clean_link_fixed. Record coverage is not patient coverage.</footer>
+<script src="assets/browser.js?v=v5.1_clean_link_fixed"></script>
+</body>
+</html>

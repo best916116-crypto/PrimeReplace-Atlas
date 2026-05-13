@@ -1,0 +1,10 @@
+term	definition	common_misread
+All-mapped gene	A gene in the ClinVar/MANE/GENCODE-linked mapped universe for which transcript-unit opportunity was enumerated in v4.	All-mapped does not mean therapeutically suitable.
+Curated display gene	A legacy 306-gene display/benchmark/high-detail subset retained for continuity, examples, and richer pages.	The curated subset is not the main denominator and not a target list.
+ClinVar P/LP gene-variant row	A mapped gene-variant row derived from ClinVar pathogenic/likely pathogenic VCF records.	A row is not a patient, allele frequency, or prevalence estimate.
+ClinVar record coverage	For a transcript unit, the fraction of gene-level ClinVar P/LP records falling in or downstream of that unit according to the unit definition.	This is not patient coverage and not therapeutic rescue probability.
+Low-record-burden interpretation-limited	A gene with sparse ClinVar P/LP record count where unit coverage can be computed but should not be overinterpreted.	This is not a negative result.
+Transcript unit	A pre-implementation replacement hypothesis such as single exon, adjacent exon block, or downstream-CDS implantation.	A transcript unit is not a final molecular design.
+Opportunity row	One transcript-unit row with coverage, donor size, coverage-to-size ratio, and related metrics.	Opportunity rows are not unique genes and not final designs.
+Donor-burden stress	A class where theoretical coverage may require a large donor or complex transcript context.	This does not mean impossible.
+PA-Exact evidence-burden gate	A support layer indicating future evidence needs and blocked claims.	It is not a PA-mode recommender.

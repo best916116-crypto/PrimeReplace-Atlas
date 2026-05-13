@@ -1,0 +1,9 @@
+claim	status	exact_wording	not_allowed_extension
+all-mapped transcript-unit opportunity atlas	allowed	PrimeReplace Atlas enumerates transcript-unit replacement opportunity across 5,738 ClinVar/MANE/GENCODE-linked mapped genes.	does not imply therapeutic suitability
+ClinVar P/LP gene-variant rows	allowed_with_precision	The all-mapped layer remaps 346,444 ClinVar P/LP gene-variant rows.	do not call these patients or unique individuals
+low-record-burden interpretation limit	allowed_and_central	3,459 genes were flagged as low-record-burden interpretation-limited.	do not treat sparse 100% coverage as robust opportunity
+306-gene role	reframed	The previous 306-gene set is retained as a curated display, benchmark, and high-detail subset.	do not call it the full enumeration denominator
+PA-Exact role	support_only	PA-Exact is retained as an evidence-burden and claim-boundary gate.	no final PA-family mode recommendation
+editing efficiency	forbidden	No editing-efficiency prediction is made.	never imply efficiency from coverage/donor size
+patient coverage	forbidden	ClinVar record coverage is not patient coverage.	never convert variant counts to patient coverage
+global score	forbidden	No global total score or therapeutic ranking is produced.	no ranked target list

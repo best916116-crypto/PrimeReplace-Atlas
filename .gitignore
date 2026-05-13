@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+paper2_prime_replace_hardened/
+data/external/
+data/interim/
+results/
+*.tar.gz
+*.zip
+*.log

@@ -1,0 +1,16 @@
+{
+  "step": "browser_v5_public_docs_promotion_v1",
+  "timestamp_utc": "2026-05-13T05:46:52.058360+00:00",
+  "passed": true,
+  "counts": {
+    "PASS": 8
+  },
+  "outdir": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/browser_v5_public_docs_promotion_v1",
+  "source_v5_site": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/prime_replace_browser_static_v5_clean_explainer/site",
+  "public_docs": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/submission_deposit_clean_allmapped_v1/github_repo/PrimeReplace-Atlas/docs",
+  "v4_site_path": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/prime_replace_browser_static_v4_allmapped/site",
+  "applied": true,
+  "also_update_v4_path": false,
+  "public_language_review_required_hits": 0,
+  "details_tsv": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/browser_v5_public_docs_promotion_v1/validation/browser_v5_public_docs_promotion_validation.tsv"
+}

@@ -1,0 +1,10 @@
+semantic_class_prePAExact	gene_count	denominator	fraction	interpretation_limit
+low_record_burden_interpretation_limited	3459	5738	0.602823	semantic class is pre-implementation, not therapeutic suitability
+compact_downstream_CDS_implantation_opportunity	1720	5738	0.299756	semantic class is pre-implementation, not therapeutic suitability
+high_coverage_downstream_CDS_but_donor_or_context_burden	190	5738	0.033113	semantic class is pre-implementation, not therapeutic suitability
+compact_adjacent_exon_block_opportunity	188	5738	0.032764	semantic class is pre-implementation, not therapeutic suitability
+large_gene_or_donor_burden_stress_case	90	5738	0.015685	semantic class is pre-implementation, not therapeutic suitability
+cancer_or_tumor_predisposition_high_burden_control	35	5738	0.006100	semantic class is pre-implementation, not therapeutic suitability
+single_exon_hotspot_opportunity	31	5738	0.005403	semantic class is pre-implementation, not therapeutic suitability
+diffuse_or_moderate_replacement_opportunity	21	5738	0.003660	semantic class is pre-implementation, not therapeutic suitability
+repeat_or_mechanism_complex_replacement_case	4	5738	0.000697	semantic class is pre-implementation, not therapeutic suitability

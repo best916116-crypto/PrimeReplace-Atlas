@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1200" viewBox="0 0 1700 1200">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style><![CDATA[text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933}.panel{font-size:18px;font-weight:700}.small{font-size:12px;fill:#5d6977}.label{font-size:14px;fill:#1f2933}.tiny{font-size:10px;fill:#5d6977}.num{font-size:22px;font-weight:700;fill:#2f5f9f}.axis{font-size:12px;fill:#5d6977}]]></style>
+<text x="60.0" y="70.0" class="panel" text-anchor="start">A</text>
+<text x="90.0" y="70.0" class="panel" text-anchor="start">Use after gene identification</text>
+<rect x="80.0" y="150.0" width="250.0" height="120.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="98.0" y="192.0" class="label" text-anchor="start">Gene or locus identified</text>
+<text x="98.0" y="232.0" class="small" text-anchor="start">clinical or research</text>
+<text x="98.0" y="245.0" class="small" text-anchor="start">sequencing</text>
+<line x1="338.0" y1="210.0" x2="377.0" y2="210.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 377.0 210.0 L 370.2 214.3 L 370.2 205.7 Z" fill="#788391"/>
+<rect x="385.0" y="150.0" width="250.0" height="120.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="403.0" y="192.0" class="label" text-anchor="start">Query Atlas</text>
+<text x="403.0" y="232.0" class="small" text-anchor="start">5,738 all-mapped gene pages</text>
+<line x1="643.0" y1="210.0" x2="682.0" y2="210.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 682.0 210.0 L 675.2 214.3 L 675.2 205.7 Z" fill="#788391"/>
+<rect x="690.0" y="150.0" width="250.0" height="120.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="708.0" y="192.0" class="label" text-anchor="start">Read unit metrics</text>
+<text x="708.0" y="232.0" class="small" text-anchor="start">record coverage + payload</text>
+<line x1="948.0" y1="210.0" x2="987.0" y2="210.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 987.0 210.0 L 980.2 214.3 L 980.2 205.7 Z" fill="#788391"/>
+<rect x="995.0" y="150.0" width="250.0" height="120.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1013.0" y="192.0" class="label" text-anchor="start">Interpret caveats</text>
+<text x="1013.0" y="232.0" class="small" text-anchor="start">boundary, mechanism, record</text>
+<text x="1013.0" y="245.0" class="small" text-anchor="start">support</text>
+<line x1="1253.0" y1="210.0" x2="1292.0" y2="210.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 1292.0 210.0 L 1285.2 214.3 L 1285.2 205.7 Z" fill="#788391"/>
+<rect x="1300.0" y="150.0" width="250.0" height="120.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1318.0" y="192.0" class="label" text-anchor="start">Separate design work</text>
+<text x="1318.0" y="232.0" class="small" text-anchor="start">implementation and</text>
+<text x="1318.0" y="245.0" class="small" text-anchor="start">validation outside atlas</text>
+<text x="60.0" y="410.0" class="panel" text-anchor="start">B</text>
+<text x="90.0" y="410.0" class="panel" text-anchor="start">Gene-page anatomy</text>
+<rect x="110.0" y="465.0" width="760.0" height="520.0" rx="8.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="135.0" y="510.0" class="num" text-anchor="start">GENE</text>
+<rect x="135.0" y="535.0" width="330.0" height="28.0" rx="14.0" fill="#e8f1fb" stroke="#2f5f9f" stroke-width="1.0"/>
+<text x="152.0" y="555.0" class="small" text-anchor="start">Architecture label</text>
+<rect x="135.0" y="605.0" width="710.0" height="60.0" rx="4.0" fill="#f7f9fb" stroke="#dbe2ea" stroke-width="1.0"/>
+<text x="155.0" y="629.0" class="label" text-anchor="start">Gene summary</text>
+<text x="155.0" y="651.0" class="small" text-anchor="start">MANE transcript, P/LP record count, low-record flag</text>
+<rect x="135.0" y="695.0" width="710.0" height="60.0" rx="4.0" fill="#f7f9fb" stroke="#dbe2ea" stroke-width="1.0"/>
+<text x="155.0" y="719.0" class="label" text-anchor="start">Unit-level record coverage</text>
+<text x="155.0" y="741.0" class="small" text-anchor="start">single exon / exon block / downstream-CDS</text>
+<rect x="135.0" y="785.0" width="710.0" height="60.0" rx="4.0" fill="#f7f9fb" stroke="#dbe2ea" stroke-width="1.0"/>
+<text x="155.0" y="809.0" class="label" text-anchor="start">Why this classification?</text>
+<text x="155.0" y="831.0" class="small" text-anchor="start">short decision trace</text>
+<rect x="135.0" y="875.0" width="710.0" height="60.0" rx="4.0" fill="#f7f9fb" stroke="#dbe2ea" stroke-width="1.0"/>
+<text x="155.0" y="899.0" class="label" text-anchor="start">How to read this page</text>
+<text x="155.0" y="921.0" class="small" text-anchor="start">concise non-claim note</text>
+<text x="980.0" y="410.0" class="panel" text-anchor="start">C</text>
+<text x="1010.0" y="410.0" class="panel" text-anchor="start">Reader output</text>
+<rect x="1010.0" y="465.0" width="520.0" height="360.0" rx="8.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<rect x="1045.0" y="520.0" width="26.0" height="26.0" rx="4.0" fill="#d7ebe7" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="1090.0" y="540.0" class="label" text-anchor="start">Which unit type explains record burden?</text>
+<rect x="1045.0" y="588.0" width="26.0" height="26.0" rx="4.0" fill="#d7ebe7" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="1090.0" y="608.0" class="label" text-anchor="start">Is record support sparse?</text>
+<rect x="1045.0" y="656.0" width="26.0" height="26.0" rx="4.0" fill="#d7ebe7" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="1090.0" y="676.0" class="label" text-anchor="start">Is payload compact or stress-like?</text>
+<rect x="1045.0" y="724.0" width="26.0" height="26.0" rx="4.0" fill="#d7ebe7" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="1090.0" y="744.0" class="label" text-anchor="start">Which caveats must be carried forward?</text>
+<text x="1010.0" y="890.0" class="small" text-anchor="start">This is a lookup workflow, not a treatment selector.</text>
+</svg>

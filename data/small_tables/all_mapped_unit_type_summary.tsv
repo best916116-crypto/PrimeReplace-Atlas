@@ -1,0 +1,4 @@
+unit_type	row_count	denominator	fraction	denominator_note
+adjacent_exon_block	276985	437301	0.633397	opportunity rows, not unique genes
+single_exon	83166	437301	0.190180	opportunity rows, not unique genes
+downstream_CDS_implantation	77150	437301	0.176423	opportunity rows, not unique genes

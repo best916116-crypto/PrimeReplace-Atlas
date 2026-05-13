@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1200" viewBox="0 0 1700 1200">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style><![CDATA[text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933}.panel{font-size:18px;font-weight:700}.small{font-size:12px;fill:#5d6977}.label{font-size:14px;fill:#1f2933}.tiny{font-size:10px;fill:#5d6977}.num{font-size:22px;font-weight:700;fill:#2f5f9f}.axis{font-size:12px;fill:#5d6977}]]></style>
+<text x="60.0" y="70.0" class="panel" text-anchor="start">A</text>
+<text x="90.0" y="70.0" class="panel" text-anchor="start">Unit-type distribution</text>
+<text x="120.0" y="152.0" class="label" text-anchor="start">Adjacent exon block</text>
+<rect x="400.0" y="130.0" width="760.0" height="34.0" rx="4.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<rect x="400.0" y="130.0" width="760.0" height="34.0" rx="4.0" fill="#1f7a78" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="1172.0" y="153.0" class="label" text-anchor="start">276,985</text>
+<text x="120.0" y="224.0" class="label" text-anchor="start">Single exon</text>
+<rect x="400.0" y="202.0" width="760.0" height="34.0" rx="4.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<rect x="400.0" y="202.0" width="228.2" height="34.0" rx="4.0" fill="#1f7a78" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="640.2" y="225.0" class="label" text-anchor="start">83,166</text>
+<text x="120.0" y="296.0" class="label" text-anchor="start">Downstream-CDS</text>
+<rect x="400.0" y="274.0" width="760.0" height="34.0" rx="4.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<rect x="400.0" y="274.0" width="211.7" height="34.0" rx="4.0" fill="#1f7a78" stroke="#1f7a78" stroke-width="1.0"/>
+<text x="623.7" y="297.0" class="label" text-anchor="start">77,150</text>
+<text x="120.0" y="385.0" class="small" text-anchor="start">Denominator: 437,301 transcript-unit opportunity rows.</text>
+<text x="60.0" y="430.0" class="panel" text-anchor="start">B</text>
+<text x="90.0" y="430.0" class="panel" text-anchor="start">Coverage and payload bins</text>
+<text x="260.0" y="485.0" class="small" text-anchor="middle">≤5 kb</text>
+<text x="395.0" y="485.0" class="small" text-anchor="middle">5–20 kb</text>
+<text x="530.0" y="485.0" class="small" text-anchor="middle">20–50 kb</text>
+<text x="665.0" y="485.0" class="small" text-anchor="middle">&gt;50 kb</text>
+<text x="140.0" y="545.0" class="small" text-anchor="end">≥80%</text>
+<rect x="160.0" y="510.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.90" stroke="#cbd5df"/>
+<text x="222.5" y="577.5" class="label" text-anchor="middle">4,587</text>
+<rect x="295.0" y="510.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.21" stroke="#cbd5df"/>
+<text x="357.5" y="577.5" class="label" text-anchor="middle">369</text>
+<rect x="430.0" y="510.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.15" stroke="#cbd5df"/>
+<text x="492.5" y="577.5" class="label" text-anchor="middle">5</text>
+<rect x="565.0" y="510.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.15" stroke="#cbd5df"/>
+<text x="627.5" y="577.5" class="label" text-anchor="middle">1</text>
+<text x="140.0" y="680.0" class="small" text-anchor="end">50–80%</text>
+<rect x="160.0" y="645.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.21" stroke="#cbd5df"/>
+<text x="222.5" y="712.5" class="label" text-anchor="middle">380</text>
+<rect x="295.0" y="645.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.15" stroke="#cbd5df"/>
+<text x="357.5" y="712.5" class="label" text-anchor="middle">4</text>
+<rect x="430.0" y="645.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<rect x="565.0" y="645.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<text x="140.0" y="815.0" class="small" text-anchor="end">20–50%</text>
+<rect x="160.0" y="780.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.16" stroke="#cbd5df"/>
+<text x="222.5" y="847.5" class="label" text-anchor="middle">82</text>
+<rect x="295.0" y="780.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<rect x="430.0" y="780.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<rect x="565.0" y="780.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<text x="140.0" y="950.0" class="small" text-anchor="end">&lt;20%</text>
+<rect x="160.0" y="915.0" width="125.0" height="125.0" fill="#2f5f9f" fill-opacity="0.18" stroke="#cbd5df"/>
+<text x="222.5" y="982.5" class="label" text-anchor="middle">185</text>
+<rect x="295.0" y="915.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<rect x="430.0" y="915.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<rect x="565.0" y="915.0" width="125.0" height="125.0" fill="#edf4fb" fill-opacity="1.00" stroke="#cbd5df"/>
+<text x="160.0" y="1085.0" class="small" text-anchor="start">Cells summarize genes by best downstream-CDS record coverage and payload bin.</text>
+<text x="1120.0" y="430.0" class="panel" text-anchor="start">C</text>
+<text x="1150.0" y="430.0" class="panel" text-anchor="start">Payload interpretation</text>
+<rect x="1140.0" y="500.0" width="390.0" height="330.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1170.0" y="550.0" class="num" text-anchor="start">≤5,000 bp</text>
+<text x="1170.0" y="574.0" class="small" text-anchor="start">compact payload descriptor</text>
+<text x="1170.0" y="615.0" class="num" text-anchor="start">5–20 kb</text>
+<text x="1170.0" y="639.0" class="small" text-anchor="start">moderate payload burden</text>
+<text x="1170.0" y="680.0" class="num" text-anchor="start">&gt;20,000 bp</text>
+<text x="1170.0" y="704.0" class="small" text-anchor="start">large-payload stress</text>
+<text x="1170.0" y="745.0" class="num" text-anchor="start">&gt;50 kb</text>
+<text x="1170.0" y="769.0" class="small" text-anchor="start">ultra-large burden</text>
+<text x="1140.0" y="890.0" class="small" text-anchor="start">Coverage alone is insufficient.</text>
+</svg>

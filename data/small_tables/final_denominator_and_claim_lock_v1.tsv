@@ -1,0 +1,10 @@
+lock_item	value	where_used	rule
+main_gene_denominator	5738	Fig. 1, Fig. 2	all-mapped genes only
+main_opportunity_row_denominator	437301	Fig. 1, Fig. 3	transcript-unit opportunity rows; not genes
+low_record_burden_gene_count	3459	Fig. 2	<20 ClinVar P/LP records; interpretation-limited, not excluded
+architecture_interpretable_gene_count	2279	Fig. 2	after low-record-burden gate
+ClinVar_PLP_gene_variant_rows	346444	Methods/Supplement	not patients
+unique_genomic_coordinates	336901	Methods/Supplement	record redundancy sensitivity
+compact_payload_bin	≤5,000 bp	Fig. 3	interpretation bin, not feasibility cutoff
+large_payload_bin	>20,000 bp	Fig. 3	donor-burden descriptor, not impossibility
+legacy_306_and_39634	excluded_from_main_figures	none	do not use as main denominator

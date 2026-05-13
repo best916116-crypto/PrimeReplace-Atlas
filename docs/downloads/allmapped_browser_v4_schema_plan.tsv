@@ -1,0 +1,11 @@
+page_or_module	purpose	required_content	data_source	status
+Home	State all-mapped atlas scale and guardrail	5,738 all-mapped genes; 437,301 opportunity rows; low-burden class; no PA mode recommendation	all_mapped_enumeration_v1	new_v4_required
+Start here	Explain ClinVar record coverage, low-burden interpretation, and all-mapped vs curated display genes	Glossary links; what this browser is not	browser_v3 plus all_mapped glossary update	update_v3
+Gene search	Search all 5,738 enumerated genes	Every gene has all-mapped summary status; curated display subset highlighted separately	all_mapped_gene_semantic_summary.tsv	replace_included/not_currently_enumerated_labels
+All-gene lightweight detail pages	Provide summary for all 5,738 genes	semantic class, record count, low-burden flag, best unit by type, top 10 units	all_mapped_gene_semantic_summary.tsv; all_mapped_opportunity_metrics_prePAExact.tsv	new_v4_required
+Curated display gene pages	High-detail pages for 306 legacy/benchmark display genes	expanded unit tables and figure role	old306_vs_allmapped_overlap_gene_audit.tsv; old tableS1/S2	retained_but_reframed
+Low-burden interpretation guide	Prevent overinterpretation of 100% coverage in sparse genes	ClinVar_PL_record_count < threshold; 3,459 flagged genes	all_mapped_low_burden_interpretation_flags.tsv	new_v4_required
+Architecture classes	Show full semantic distribution	all-mapped class counts and interpretation limits	all_mapped_semantic_class_summary.tsv	update_v3
+Opportunity unit table	Show all-mapped unit-type distribution	437,301 rows; row denominator warning	all_mapped_unit_type_summary.tsv	update_v3
+PA-Exact evidence-burden gate	Keep PAExact as support layer only	pending/provisional evidence burden; blocked claims; no mode recommendation	post_PAExact_dryrun_v0 and PAExact package	supplementary_only
+Downloads	Expose all-mapped source tables	all_mapped_gene_semantic_summary, all_mapped_opportunity_metrics, unique coordinate sensitivity, figure count lock	all_mapped_integration_audit_v1	new_v4_required

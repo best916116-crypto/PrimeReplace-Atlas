@@ -1,0 +1,10 @@
+item	value	used_in	warning
+ClinVar VCF records scanned	4,403,650	Figure 1 only	record/resource count, not patients
+primary ClinVar P/LP VCF records	337,682	Figure 1 only	P/LP filter count
+all-mapped genes	5738	Figure 1 and Figure 2	gene-level denominator
+ClinVar P/LP gene-variant rows	346444	Methods/Supplement	not patient count
+unique genomic coordinates	336901	Methods/Supplement	ClinVar redundancy sensitivity
+all-mapped opportunity rows	437301	Figure 3	row-level denominator; one gene produces many rows
+low-record-burden genes	3459	Figure 2	<20 ClinVar P/LP records
+architecture-interpretable genes	2279	Figure 2	after low-record gate
+curated display subset	306	Figure 4/examples only	not current main denominator

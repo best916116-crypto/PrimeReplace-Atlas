@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1200" viewBox="0 0 1700 1200">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style><![CDATA[text{font-family:Arial,Helvetica,sans-serif;fill:#1f2933}.panel{font-size:18px;font-weight:700}.small{font-size:12px;fill:#5d6977}.label{font-size:14px;fill:#1f2933}.tiny{font-size:10px;fill:#5d6977}.num{font-size:22px;font-weight:700;fill:#2f5f9f}.axis{font-size:12px;fill:#5d6977}]]></style>
+<text x="60.0" y="70.0" class="panel" text-anchor="start">A</text>
+<text x="90.0" y="70.0" class="panel" text-anchor="start">Resource freeze</text>
+<rect x="70.0" y="105.0" width="610.0" height="245.0" rx="0.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="90.0" y="140.0" class="small" text-anchor="start">Layer</text>
+<text x="320.0" y="140.0" class="small" text-anchor="start">Frozen resource</text>
+<line x1="70.0" y1="148.0" x2="680.0" y2="148.0" stroke="#e2e8ee" stroke-width="1.0"/>
+<text x="90.0" y="170.0" class="label" text-anchor="start">Genome</text>
+<text x="320.0" y="170.0" class="label" text-anchor="start">GRCh38 / GRCh38.p14</text>
+<line x1="70.0" y1="193.0" x2="680.0" y2="193.0" stroke="#e2e8ee" stroke-width="1.0"/>
+<text x="90.0" y="215.0" class="label" text-anchor="start">Transcript anchor</text>
+<text x="320.0" y="215.0" class="label" text-anchor="start">MANE Select</text>
+<line x1="70.0" y1="238.0" x2="680.0" y2="238.0" stroke="#e2e8ee" stroke-width="1.0"/>
+<text x="90.0" y="260.0" class="label" text-anchor="start">Transcript structure</text>
+<text x="320.0" y="260.0" class="label" text-anchor="start">GENCODE v49</text>
+<line x1="70.0" y1="283.0" x2="680.0" y2="283.0" stroke="#e2e8ee" stroke-width="1.0"/>
+<text x="90.0" y="305.0" class="label" text-anchor="start">Variant records</text>
+<text x="320.0" y="305.0" class="label" text-anchor="start">ClinVar GRCh38 P/LP VCF</text>
+<text x="760.0" y="70.0" class="panel" text-anchor="start">B</text>
+<text x="790.0" y="70.0" class="panel" text-anchor="start">All-mapped denominator flow</text>
+<rect x="760.0" y="180.0" width="160.0" height="95.0" rx="6.0" fill="#f7f9fb" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="840.0" y="218.0" class="num" text-anchor="middle">4,403,650</text>
+<text x="840.0" y="242.0" class="small" text-anchor="middle">ClinVar VCF records</text>
+<line x1="928.0" y1="227.0" x2="967.0" y2="227.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 967.0 227.0 L 960.2 231.3 L 960.2 222.7 Z" fill="#788391"/>
+<rect x="975.0" y="180.0" width="160.0" height="95.0" rx="6.0" fill="#f7f9fb" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1055.0" y="218.0" class="num" text-anchor="middle">337,682</text>
+<text x="1055.0" y="242.0" class="small" text-anchor="middle">primary P/LP</text>
+<text x="1055.0" y="255.0" class="small" text-anchor="middle">records</text>
+<line x1="1143.0" y1="227.0" x2="1182.0" y2="227.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 1182.0 227.0 L 1175.2 231.3 L 1175.2 222.7 Z" fill="#788391"/>
+<rect x="1190.0" y="180.0" width="160.0" height="95.0" rx="6.0" fill="#f7f9fb" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1270.0" y="218.0" class="num" text-anchor="middle">5,738</text>
+<text x="1270.0" y="242.0" class="small" text-anchor="middle">all-mapped genes</text>
+<line x1="1358.0" y1="227.0" x2="1397.0" y2="227.0" stroke="#788391" stroke-width="1.4"/>
+<path d="M 1397.0 227.0 L 1390.2 231.3 L 1390.2 222.7 Z" fill="#788391"/>
+<rect x="1405.0" y="180.0" width="160.0" height="95.0" rx="6.0" fill="#f7f9fb" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1485.0" y="218.0" class="num" text-anchor="middle">437,301</text>
+<text x="1485.0" y="242.0" class="small" text-anchor="middle">opportunity rows</text>
+<text x="760.0" y="320.0" class="small" text-anchor="start">Counts are records, genes, and transcript-unit rows.</text>
+<text x="60.0" y="470.0" class="panel" text-anchor="start">C</text>
+<text x="90.0" y="470.0" class="panel" text-anchor="start">Transcript-unit definitions</text>
+<rect x="90.0" y="535.0" width="430.0" height="210.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="108.0" y="567.0" class="label" text-anchor="start">Single exon</text>
+<line x1="135.0" y1="640.0" x2="455.0" y2="640.0" stroke="#788391" stroke-width="1.4"/>
+<rect x="155.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="182.5" y="642.0" class="tiny" text-anchor="middle">E1</text>
+<rect x="225.0" y="623.0" width="78.0" height="28.0" rx="3.0" fill="#e8f1fb" stroke="#2f5f9f" stroke-width="1.0"/>
+<text x="264.0" y="642.0" class="tiny" text-anchor="middle">E2</text>
+<rect x="315.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="342.5" y="642.0" class="tiny" text-anchor="middle">E3</text>
+<rect x="385.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="412.5" y="642.0" class="tiny" text-anchor="middle">E4</text>
+<text x="108.0" y="705.0" class="small" text-anchor="start">local exon unit</text>
+<rect x="590.0" y="535.0" width="430.0" height="210.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="608.0" y="567.0" class="label" text-anchor="start">Adjacent exon block</text>
+<line x1="635.0" y1="640.0" x2="955.0" y2="640.0" stroke="#788391" stroke-width="1.4"/>
+<rect x="655.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="682.5" y="642.0" class="tiny" text-anchor="middle">E1</text>
+<rect x="725.0" y="623.0" width="78.0" height="28.0" rx="3.0" fill="#e8f1fb" stroke="#2f5f9f" stroke-width="1.0"/>
+<text x="764.0" y="642.0" class="tiny" text-anchor="middle">E2</text>
+<rect x="815.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="842.5" y="642.0" class="tiny" text-anchor="middle">E3</text>
+<rect x="885.0" y="623.0" width="78.0" height="28.0" rx="3.0" fill="#e8f1fb" stroke="#2f5f9f" stroke-width="1.0"/>
+<text x="924.0" y="642.0" class="tiny" text-anchor="middle">E4</text>
+<rect x="975.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1002.5" y="642.0" class="tiny" text-anchor="middle">E5</text>
+<text x="608.0" y="705.0" class="small" text-anchor="start">neighboring exon block</text>
+<rect x="1090.0" y="535.0" width="430.0" height="210.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1108.0" y="567.0" class="label" text-anchor="start">Downstream-CDS</text>
+<line x1="1135.0" y1="640.0" x2="1455.0" y2="640.0" stroke="#788391" stroke-width="1.4"/>
+<rect x="1155.0" y="627.0" width="55.0" height="20.0" rx="3.0" fill="#f4f7fa" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="1182.5" y="642.0" class="tiny" text-anchor="middle">E1</text>
+<line x1="1225.0" y1="610.0" x2="1225.0" y2="670.0" stroke="#a54a3d" stroke-width="1.6"/>
+<text x="1225.0" y="687.0" class="tiny" text-anchor="middle">boundary</text>
+<rect x="1260.0" y="623.0" width="78.0" height="28.0" rx="3.0" fill="#e8f1fb" stroke="#2f5f9f" stroke-width="1.0"/>
+<text x="1299.0" y="642.0" class="tiny" text-anchor="middle">downstream coding payload</text>
+<text x="1108.0" y="705.0" class="small" text-anchor="start">boundary-based hypothesis</text>
+<text x="60.0" y="870.0" class="panel" text-anchor="start">D</text>
+<text x="90.0" y="870.0" class="panel" text-anchor="start">Public resource output</text>
+<rect x="90.0" y="915.0" width="1420.0" height="185.0" rx="6.0" fill="#ffffff" stroke="#cbd5df" stroke-width="1.0"/>
+<text x="110.0" y="963.0" class="label" text-anchor="start">Gene pages</text>
+<text x="110.0" y="993.0" class="small" text-anchor="start">5,738 all-mapped genes</text>
+<text x="455.0" y="963.0" class="label" text-anchor="start">Source tables</text>
+<text x="455.0" y="993.0" class="small" text-anchor="start">gene, unit, class, payload</text>
+<text x="455.0" y="1006.0" class="small" text-anchor="start">summaries</text>
+<text x="800.0" y="963.0" class="label" text-anchor="start">Browser</text>
+<text x="800.0" y="993.0" class="small" text-anchor="start">gene lookup and concise</text>
+<text x="800.0" y="1006.0" class="small" text-anchor="start">interpretation</text>
+<text x="1145.0" y="963.0" class="label" text-anchor="start">Archive</text>
+<text x="1145.0" y="993.0" class="small" text-anchor="start">checksums and validation</text>
+<text x="1145.0" y="1006.0" class="small" text-anchor="start">manifests</text>
+</svg>

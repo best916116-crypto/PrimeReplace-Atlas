@@ -1,0 +1,19 @@
+{
+  "step": "NAR_final_figure_artwork_execution_pack_v1",
+  "timestamp_utc": "2026-05-13T06:47:16.572425+00:00",
+  "passed": true,
+  "counts": {
+    "PASS": 33
+  },
+  "outdir": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/NAR_final_figure_artwork_execution_pack_v1",
+  "allmapped_genes": 5738,
+  "allmapped_opportunity_rows": 437301,
+  "low_record_burden_genes": 3459,
+  "architecture_interpretable_genes": 2279,
+  "low_record_threshold_lt": 20,
+  "compact_payload_bin_le_bp": 5000,
+  "large_payload_bin_gt_bp": 20000,
+  "main_decision": "Final artwork should use all-mapped counts, thresholded downstream-CDS language, gene-level Fig. 2, row-level Fig. 3, and browser/user workflow Fig. 4.",
+  "details_tsv": "/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/NAR_final_figure_artwork_execution_pack_v1/validation/final_figure_artwork_execution_validation.tsv",
+  "scope": "Final figure artwork execution source-lock after Browser v5.1 and manuscript patch; all-mapped denominator only; no selected-306 main denominator; no therapeutic candidate/no-go/report-card language; no final PA-family mode recommendation; no editing-efficiency prediction; no therapeutic-efficacy/safety claim; no patient-coverage estimate; no population/pangenome robustness claim; no boundary/scar inference; no global score."
+}
