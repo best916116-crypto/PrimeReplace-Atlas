@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use PrimeReplace Atlas, cite the Zenodo record and repository."
 title: "PrimeReplace Atlas: transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses"
 version: "1.0.0"
-doi: ""
+doi: "10.5281/zenodo.20174922"
 url: "https://github.com/best916116-crypto/PrimeReplace.git"
 date-released: "2026-05-13"
 authors:
