@@ -2,8 +2,8 @@
 
 PrimeReplace Atlas is an all-mapped transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses across human disease genes.
 
-**Browser:** https://best916116-crypto.github.io/PrimeReplace/  
-**Repository:** https://github.com/best916116-crypto/PrimeReplace.git  
+**Browser:** https://best916116-crypto.github.io/PrimeReplace-Atlas/  
+**Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas.git  
 **Zenodo archive:** TBD
 
 ## What this resource is
@@ -38,7 +38,7 @@ Low-record-burden is currently defined as fewer than 20 ClinVar P/LP records.
 ## Quick start
 
 ```bash
-git clone https://github.com/best916116-crypto/PrimeReplace.git
+git clone https://github.com/best916116-crypto/PrimeReplace-Atlas.git
 cd PrimeReplace
 python -m http.server 8000 --directory docs
 ```
