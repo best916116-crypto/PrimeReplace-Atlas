@@ -2,9 +2,9 @@
 
 PrimeReplace Atlas is an all-mapped transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses across human disease genes.
 
-**Browser:** https://best916116-crypto.github.io/PrimeReplace-Atlas/  
+**Browser:** follow Quick start  
 **Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas.git  
-**Zenodo archive:** TBD
+**Zenodo archive:** https://doi.org/10.5281/zenodo.20174922
 
 ## What this resource is
 
@@ -106,7 +106,7 @@ python scripts/validate_public_release.py
 Use the Zenodo DOI after release:
 
 ```text
-TBD
+10.5281/zenodo.20174921.
 ```
 
 Suggested citation before DOI assignment:
