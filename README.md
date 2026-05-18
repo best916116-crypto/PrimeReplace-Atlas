@@ -1,8 +1,10 @@
 # PrimeReplace Atlas
 
-PrimeReplace Atlas is an all-mapped transcript-unit architecture database that reorganizes disease-associated ClinVar pathogenic/likely pathogenic records into large-fragment replacement hypotheses across human disease genes.
+PrimeReplace Atlas is a transcript-unit architecture database for identifying where emerging large-fragment genome-writing strategies may be most usefully applied across disease-associated human genes.
 
-The resource maps ClinVar P/LP records onto MANE/GENCODE transcript structures and summarizes whether pathogenic-record burden forms local exon/block architecture, boundary-CDS payload architecture, donor-burden stress, low-record-burden interpretation-limited cases, tumor-predisposition control contexts, or mechanism-complex limitations.
+Large-fragment genome insertion and replacement technologies—including Prime Assembly-like systems, QuadPE, linear PA, integrase-assisted insertion, and related genome-writing approaches—are rapidly expanding the technical space for therapeutic genome engineering. However, a central translational question remains unresolved: **which disease-associated mutation architectures are actually well matched to these large-fragment replacement strategies?**
+
+PrimeReplace Atlas addresses this gap by reorganizing disease-associated ClinVar pathogenic/likely pathogenic records onto MANE/GENCODE transcript structures. The atlas summarizes whether pathogenic-record burden forms local exon/block architecture, boundary-CDS payload architecture, donor-burden stress, low-record-burden interpretation-limited cases, tumor-predisposition control contexts, or mechanism-complex limitations.
 
 **Browser:** https://best916116-crypto.github.io/PrimeReplace-Atlas/  
 **Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas  
@@ -10,9 +12,25 @@ The resource maps ClinVar P/LP records onto MANE/GENCODE transcript structures a
 
 ---
 
-## What this resource provides
+## Why this resource is needed
 
-PrimeReplace Atlas provides a precomputed transcript-unit architecture layer for disease-associated ClinVar P/LP records.
+Large-fragment genome-writing technologies have made increasingly large insertions and replacement-like edits technically plausible. Yet technology development alone does not answer where these approaches are likely to be useful.
+
+Disease-associated variants are catalogued as individual records, whereas large-fragment replacement hypotheses are interpreted at transcript-unit, exon-block, and coding-payload scale. PrimeReplace Atlas bridges this gap by asking:
+
+```text
+ClinVar P/LP records
+→ Where do these records fall on the MANE/GENCODE transcript?
+→ Do they cluster in a local exon or exon block?
+→ Are they better described by a coding-payload/boundary architecture?
+→ Is the apparent coverage dominated by donor size, sparse record support, tumor context, or mechanism complexity?
+```
+
+The output is an architecture map, not a single suitability score.
+
+---
+
+## What this resource provides
 
 The current release includes:
 
@@ -70,9 +88,7 @@ http://localhost:8000/
 
 ## Conceptual overview
 
-Disease-associated pathogenic variants are catalogued as individual records, whereas large-fragment replacement hypotheses are interpreted at transcript-unit, exon-block, and coding-payload scale.
-
-PrimeReplace Atlas bridges this gap by converting:
+PrimeReplace Atlas converts public pathogenic-record burden into transcript-unit architecture:
 
 ```text
 ClinVar P/LP record
@@ -83,7 +99,7 @@ ClinVar P/LP record
 → architecture class
 ```
 
-The core output is not a single score. PrimeReplace Atlas reports independent interpretation axes:
+PrimeReplace Atlas reports independent interpretation axes:
 
 - record support
 - transcript-unit type
@@ -109,9 +125,9 @@ An adjacent exon-block unit asks whether neighboring exons form a local compact 
 
 ### Boundary-CDS payload unit
 
-A boundary-CDS payload unit, formally a transcript-boundary CDS payload hypothesis, asks whether an upstream endogenous transcript segment could in principle connect to a donor CDS payload that groups downstream pathogenic records.
+A boundary-CDS payload unit asks whether pathogenic records downstream of a transcript boundary can be grouped by a coding-payload hypothesis.
 
-This is a boundary-dependent transcript-bypass hypothesis. It is not equivalent to local exon/block replacement and does not imply functional rescue without RNA, junction, reading-frame, isoform, expression, dosage, NMD, and protein-function validation.
+This is a transcript-unit architecture descriptor. It is distinct from local exon/block replacement and requires downstream experimental validation before any implementation claim.
 
 ---
 
@@ -236,7 +252,7 @@ A manuscript citation will be added after publication.
 
 ## License
 
-See the repository license file for reuse terms.
+This project is released under the MIT License. See `LICENSE`.
 
 ---
 
