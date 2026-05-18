@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>Condition facets · PrimeReplace Atlas</title>
+<link rel="stylesheet" href="assets/style.css?v=v6_condition_facet">
+<style>
+.badge-small { display:inline-block; padding:2px 6px; border:1px solid #c7c7c7; border-radius:999px; font-size:0.82em; margin:1px; background:#fafafa; }
+.note-box { border:1px solid #d0d0d0; border-radius:10px; padding:12px; background:#fbfbfb; margin:12px 0; }
+.compact-table td, .compact-table th { font-size:0.9em; }
+</style>
+</head>
+<body>
+<nav class="topnav">
+<div class="brand">PrimeReplace Atlas</div>
+<div class="links">
+<a href="index.html">Overview</a>
+<a href="start_here.html">Start</a>
+<a href="gene_search.html">Gene search</a>
+<a href="all_gene_index.html">Gene index</a>
+<a href="opportunity_units.html">Units</a>
+<a href="architecture_classes.html">Classes</a>
+<a href="condition_facets.html">Condition facets</a>
+<a href="glossary.html">Glossary</a>
+<a href="downloads.html">Downloads</a>
+</div>
+</nav>
+<main class="container">
+
+<h1>Condition-associated pathogenic-record facets</h1>
+
+<p>This page groups public ClinVar pathogenic/likely pathogenic records by ClinVar condition annotation where available, then connects source-locked groups to transcript-unit architecture in the recovered deep-enumerated subset.</p>
+
+<div class="note-box">
+<strong>Scope.</strong> Condition facets are record-level ClinVar annotation groups. They are not disease prevalence, patient cohorts, patient coverage, therapeutic coverage, safety prediction, editing-efficiency prediction, or final implementation-mode recommendations.
+</div>
+
+<h2>Recovered condition-facet scale</h2>
+<table class="compact-table">
+<tbody>
+<tr><th>High-support condition groups</th><td>3,389</td></tr>
+<tr><th>High-support groups with recovered unit coverage</th><td>1,278</td></tr>
+<tr><th>Global recovered fraction</th><td>37.7%</td></tr>
+<tr><th>Covered-index gene-universe high-support groups</th><td>0</td></tr>
+<tr><th>Covered-index groups with unit coverage</th><td>0</td></tr>
+<tr><th>Covered-index recovery fraction</th><td>100.0%</td></tr>
+<tr><th>Condition-unit coverage rows</th><td>0</td></tr>
+</tbody>
+</table>
+
+<h2>Condition architecture classes</h2>
+<table class="compact-table">
+<thead><tr><th>Class</th><th>Gene-condition groups</th><th>Use</th></tr></thead>
+<tbody>
+<tr><td>Record-support-limited group</td><td>28,884</td><td></td></tr><tr><td>High-support group without recovered unit coverage</td><td>2,110</td><td></td></tr><tr><td>Boundary-CDS payload architecture</td><td>871</td><td></td></tr><tr><td>Tumor-predisposition control context</td><td>239</td><td></td></tr><tr><td>Local compact architecture</td><td>88</td><td></td></tr><tr><td>Diffuse/moderate architecture</td><td>27</td><td></td></tr><tr><td>Boundary-CDS payload with large-payload burden</td><td>21</td><td></td></tr><tr><td>Donor-burden stress</td><td>19</td><td></td></tr><tr><td>Mechanism-complex limitation</td><td>14</td><td></td></tr>
+</tbody>
+</table>
+
+<h2>Representative source-locked examples</h2>
+<table class="compact-table">
+<thead><tr><th>Gene</th><th>Condition label</th><th>Class</th><th>Records</th><th>Best local coverage</th><th>Best boundary-CDS coverage</th></tr></thead>
+<tbody>
+<tr><td><a href='genes/GLA.html'>GLA</a></td><td>Fabry disease</td><td>Local compact architecture</td><td>1,089</td><td>0.724518</td><td>0.841139</td></tr><tr><td><a href='genes/ACVRL1.html'>ACVRL1</a></td><td>Telangiectasia, hereditary hemorrhagic, type 2</td><td>Local compact architecture</td><td>444</td><td>0.673423</td><td>0.997748</td></tr><tr><td><a href='genes/SMPD1.html'>SMPD1</a></td><td>Niemann-Pick disease, type A</td><td>Local compact architecture</td><td>367</td><td>0.869210</td><td>0.869210</td></tr><tr><td><a href='genes/ARSA.html'>ARSA</a></td><td>Metachromatic leukodystrophy</td><td>Local compact architecture</td><td>346</td><td>0.725434</td><td>0.907514</td></tr><tr><td><a href='genes/IDUA.html'>IDUA</a></td><td>Mucopolysaccharidosis type 1</td><td>Local compact architecture</td><td>334</td><td>0.508982</td><td>0.919162</td></tr><tr><td><a href='genes/GCDH.html'>GCDH</a></td><td>Glutaric aciduria, type 1</td><td>Local compact architecture</td><td>322</td><td>0.602484</td><td>0.993789</td></tr><tr><td><a href='genes/FBN1.html'>FBN1</a></td><td>Marfan syndrome</td><td>Boundary-CDS payload architecture</td><td>2,904</td><td>0.098485</td><td>0.998623</td></tr><tr><td><a href='genes/FBN1.html'>FBN1</a></td><td>Familial thoracic aortic aneurysm and aortic dissection</td><td>Boundary-CDS payload architecture</td><td>2,364</td><td>0.102792</td><td>0.999154</td></tr><tr><td><a href='genes/PKD1.html'>PKD1</a></td><td>Polycystic kidney disease, adult type</td><td>Boundary-CDS payload architecture</td><td>1,616</td><td>0.311881</td><td>0.974629</td></tr><tr><td><a href='genes/DMD.html'>DMD</a></td><td>Duchenne muscular dystrophy</td><td>Boundary-CDS payload architecture</td><td>1,600</td><td>0.098125</td><td>0.986250</td></tr><tr><td><a href='genes/LDLR.html'>LDLR</a></td><td>Hypercholesterolemia, familial, 1</td><td>Boundary-CDS payload architecture</td><td>1,532</td><td>0.434726</td><td>0.964752</td></tr><tr><td><a href='genes/CFTR.html'>CFTR</a></td><td>Cystic fibrosis</td><td>Boundary-CDS payload architecture</td><td>1,288</td><td>0.290373</td><td>0.951087</td></tr><tr><td><a href='genes/TTN.html'>TTN</a></td><td>Dilated cardiomyopathy 1G</td><td>Boundary-CDS payload with large-payload burden</td><td>4,510</td><td>0.227716</td><td>0.996009</td></tr><tr><td><a href='genes/TTN.html'>TTN</a></td><td>Autosomal recessive limb-girdle muscular dystrophy type 2J</td><td>Boundary-CDS payload with large-payload burden</td><td>4,105</td><td>0.223630</td><td>0.995859</td></tr><tr><td><a href='genes/NEB.html'>NEB</a></td><td>Nemaline myopathy 2</td><td>Boundary-CDS payload with large-payload burden</td><td>1,554</td><td>0.065637</td><td>0.996782</td></tr><tr><td><a href='genes/TTN.html'>TTN</a></td><td>Cardiovascular phenotype</td><td>Boundary-CDS payload with large-payload burden</td><td>1,167</td><td>0.272494</td><td>0.998286</td></tr><tr><td><a href='genes/NEB.html'>NEB</a></td><td>Arthrogryposis multiplex congenita 6</td><td>Boundary-CDS payload with large-payload burden</td><td>581</td><td>0.091222</td><td>0.998279</td></tr><tr><td><a href='genes/SYNE1.html'>SYNE1</a></td><td>Autosomal recessive ataxia, Beauce type</td><td>Boundary-CDS payload with large-payload burden</td><td>235</td><td>0.097872</td><td>0.995745</td></tr><tr><td><a href='genes/EXT1.html'>EXT1</a></td><td>Multiple congenital exostosis</td><td>Donor-burden stress</td><td>424</td><td>0.679245</td><td>0.580189</td></tr><tr><td><a href='genes/PCDH19.html'>PCDH19</a></td><td>Developmental and epileptic encephalopathy, 9</td><td>Donor-burden stress</td><td>344</td><td>0.970930</td><td>0.168605</td></tr><tr><td><a href='genes/AR.html'>AR</a></td><td>Androgen resistance syndrome</td><td>Donor-burden stress</td><td>270</td><td>0.725926</td><td>0.696296</td></tr><tr><td><a href='genes/ARSB.html'>ARSB</a></td><td>Mucopolysaccharidosis type 6</td><td>Donor-burden stress</td><td>251</td><td>0.760956</td><td>0.717131</td></tr><tr><td><a href='genes/PRPH2.html'>PRPH2</a></td><td>PRPH2-related disorder</td><td>Donor-burden stress</td><td>240</td><td>0.995833</td><td>0.575000</td></tr><tr><td><a href='genes/TYR.html'>TYR</a></td><td>Oculocutaneous albinism type 1A</td><td>Donor-burden stress</td><td>161</td><td>1.000000</td><td>0.503106</td></tr><tr><td><a href='genes/NF1.html'>NF1</a></td><td>Neurofibromatosis, type 1</td><td>Tumor-predisposition control context</td><td>4,600</td><td>0.155217</td><td>0.980870</td></tr><tr><td><a href='genes/BRCA2.html'>BRCA2</a></td><td>Breast-ovarian cancer, familial, susceptibility to, 2</td><td>Tumor-predisposition control context</td><td>3,395</td><td>0.641532</td><td>0.995582</td></tr><tr><td><a href='genes/BRCA2.html'>BRCA2</a></td><td>Hereditary breast ovarian cancer syndrome</td><td>Tumor-predisposition control context</td><td>3,209</td><td>0.638205</td><td>0.992521</td></tr><tr><td><a href='genes/BRCA1.html'>BRCA1</a></td><td>Breast-ovarian cancer, familial, susceptibility to, 1</td><td>Tumor-predisposition control context</td><td>2,883</td><td>0.661117</td><td>0.984738</td></tr><tr><td><a href='genes/BRCA2.html'>BRCA2</a></td><td>Hereditary cancer-predisposing syndrome</td><td>Tumor-predisposition control context</td><td>2,743</td><td>0.638352</td><td>0.996719</td></tr><tr><td><a href='genes/ATM.html'>ATM</a></td><td>Ataxia-telangiectasia syndrome</td><td>Tumor-predisposition control context</td><td>2,437</td><td>0.121461</td><td>0.991383</td></tr><tr><td><a href='genes/RMRP.html'>RMRP</a></td><td>Anauxetic dysplasia</td><td>Mechanism-complex limitation</td><td>233</td><td>0.845494</td><td>—</td></tr><tr><td><a href='genes/RMRP.html'>RMRP</a></td><td>Metaphyseal chondrodysplasia, McKusick type</td><td>Mechanism-complex limitation</td><td>186</td><td>0.876344</td><td>—</td></tr><tr><td><a href='genes/HBA2.html'>HBA2</a></td><td>alpha Thalassemia</td><td>Mechanism-complex limitation</td><td>157</td><td>0.955414</td><td>0.700637</td></tr><tr><td><a href='genes/HBA1.html'>HBA1</a></td><td>alpha Thalassemia</td><td>Mechanism-complex limitation</td><td>118</td><td>0.915254</td><td>0.618644</td></tr><tr><td><a href='genes/HBA1.html'>HBA1</a></td><td>Erythrocytosis, familial, 7</td><td>Mechanism-complex limitation</td><td>35</td><td>0.942857</td><td>0.628571</td></tr><tr><td><a href='genes/RMRP.html'>RMRP</a></td><td>Metaphyseal dysplasia without hypotrichosis</td><td>Mechanism-complex limitation</td><td>29</td><td>0.931034</td><td>—</td></tr><tr><td><a href='genes/ABCD1.html'>ABCD1</a></td><td>Adrenoleukodystrophy</td><td>Diffuse/moderate architecture</td><td>444</td><td>0.632883</td><td>0.590090</td></tr><tr><td><a href='genes/LMNA.html'>LMNA</a></td><td>Charcot-Marie-Tooth disease type 2</td><td>Diffuse/moderate architecture</td><td>354</td><td>0.579096</td><td>0.728814</td></tr><tr><td><a href='genes/NAGLU.html'>NAGLU</a></td><td>Mucopolysaccharidosis, MPS-III-B</td><td>Diffuse/moderate architecture</td><td>278</td><td>0.766187</td><td>0.766187</td></tr><tr><td><a href='genes/SLC22A5.html'>SLC22A5</a></td><td>Renal carnitine transport defect</td><td>Diffuse/moderate architecture</td><td>274</td><td>0.667883</td><td>0.722628</td></tr><tr><td><a href='genes/EDA.html'>EDA</a></td><td>Hypohidrotic X-linked ectodermal dysplasia</td><td>Diffuse/moderate architecture</td><td>243</td><td>0.674897</td><td>0.794239</td></tr><tr><td><a href='genes/HNF1A.html'>HNF1A</a></td><td>Monogenic diabetes</td><td>Diffuse/moderate architecture</td><td>230</td><td>0.860870</td><td>0.782609</td></tr>
+</tbody>
+</table>
+
+<h2>Downloads</h2>
+<ul>
+<li><a href="downloads/gene_condition_record_groups_v1.tsv">gene_condition_record_groups_v1.tsv</a></li>
+<li><a href="downloads/gene_condition_record_architecture_recovered_v1.tsv">gene_condition_record_architecture_recovered_v1.tsv</a></li>
+<li><a href="downloads/gene_condition_unit_coverage_recovered_v1.tsv">gene_condition_unit_coverage_recovered_v1.tsv</a></li>
+<li><a href="downloads/condition_architecture_class_summary_recovered_v1.tsv">condition_architecture_class_summary_recovered_v1.tsv</a></li>
+<li><a href="downloads/condition_layer_recovered_readiness_v1.tsv">condition_layer_recovered_readiness_v1.tsv</a></li>
+</ul>
+
+<h2>Release links</h2>
+<p>Browser: <a href="https://best916116-crypto.github.io/PrimeReplace-Atlas/">https://best916116-crypto.github.io/PrimeReplace-Atlas/</a><br>
+Repository: <a href="https://github.com/best916116-crypto/PrimeReplace-Atlas">https://github.com/best916116-crypto/PrimeReplace-Atlas</a><br>
+Zenodo archive: <a href="https://doi.org/10.5281/zenodo.20174922">https://doi.org/10.5281/zenodo.20174922</a></p>
+
+</main>
+<footer class="footer">PrimeReplace Atlas Browser v6 condition-facet patch. Condition facets are record-level ClinVar annotation groups, not patient coverage.</footer>
+<script src="assets/browser.js?v=v6_condition_facet"></script>
+</body>
+</html>

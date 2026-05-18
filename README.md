@@ -2,8 +2,13 @@
 
 PrimeReplace Atlas is an all-mapped transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses across human disease genes.
 
+<<<<<<< HEAD
 **Browser:** follow Quick start  
 **Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas.git  
+=======
+**Browser:** https://best916116-crypto.github.io/PrimeReplace-Atlas/  
+**Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas  
+>>>>>>> f4c9701 (Add condition-associated pathogenic-record facets to browser)
 **Zenodo archive:** https://doi.org/10.5281/zenodo.20174922
 
 ## What this resource is
@@ -121,3 +126,8 @@ Recommended split:
 - minimal helper scripts: MIT.
 
 See `LICENSE.md`.
+
+
+## Condition-associated pathogenic-record facets
+
+The browser includes condition-associated ClinVar P/LP record facets for the recovered deep-enumerated subset. These facets are record-level ClinVar annotation groups. They are not patient cohorts, disease prevalence estimates, patient-coverage estimates, therapeutic-coverage estimates, safety predictions, editing-efficiency predictions, or final implementation-mode recommendations.
