@@ -252,7 +252,9 @@ A manuscript citation will be added after publication.
 
 ## License
 
-This project is released under the MIT License. See `LICENSE`.
+This project is released under the MIT License. See `LICENSE.md`.
+
+The MIT License applies to PrimeReplace Atlas code, browser, and release materials in this repository. Third-party public data resources remain subject to their original provider terms.
 
 ---
 
