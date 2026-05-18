@@ -6,8 +6,6 @@ PrimeReplace Atlas is an all-mapped transcript-unit architecture resource for mu
 **Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas  
 **Zenodo archive:** https://doi.org/10.5281/zenodo.20174922
 
-**Zenodo archive:** https://doi.org/10.5281/zenodo.20174922
-
 ## What this resource is
 
 PrimeReplace Atlas maps ClinVar pathogenic/likely pathogenic (P/LP) record burden onto MANE/GENCODE transcript structures and reports gene-level and transcript-unit descriptors:
