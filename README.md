@@ -239,6 +239,10 @@ ClinVar, MANE, GENCODE, and other third-party public resources are not relicense
 
 ## Contact
 
-For public questions, bug reports, or feature requests, please use GitHub Issues.
+For public questions, bug reports, or feature requests, please use [GitHub Issues](https://github.com/best916116-crypto/PrimeReplace-Atlas/issues).
 
-For release correspondence, contact the project maintainer through the contact information listed in the Zenodo record.
+For release correspondence, contact:
+
+Junjae Park  
+Department of Brain and Cognitive Sciences, KAIST  
+[best9161@korea.ac.kr](mailto:best9161@korea.ac.kr)
