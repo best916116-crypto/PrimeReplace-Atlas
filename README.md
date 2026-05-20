@@ -1,10 +1,10 @@
 # PrimeReplace Atlas
 
-PrimeReplace Atlas is a transcript-unit architecture database for identifying where emerging large-fragment genome-writing strategies may be most usefully applied across disease-associated human genes.
+PrimeReplace Atlas maps ClinVar pathogenic/likely pathogenic variants onto MANE/GENCODE transcript structures to show how disease-associated variant burden is distributed across exons, exon blocks, and coding-payload units.
 
-Large-fragment genome insertion and replacement technologies—including Prime Assembly-like systems, QuadPE, linear PA, integrase-assisted insertion, and related genome-writing approaches—are rapidly expanding the technical space for therapeutic genome engineering. However, a central translational question remains unresolved: **which disease-associated mutation architectures are actually well matched to these large-fragment replacement strategies?**
+It is designed to help researchers triage human disease genes for large-fragment genome-writing hypotheses, including local exon/block replacement and coding-payload replacement architectures.
 
-PrimeReplace Atlas addresses this gap by reorganizing disease-associated ClinVar pathogenic/likely pathogenic records onto MANE/GENCODE transcript structures. The atlas summarizes whether pathogenic-record burden forms local exon/block architecture, boundary-CDS payload architecture, donor-burden stress, low-record-burden interpretation-limited cases, tumor-predisposition control contexts, or mechanism-complex limitations.
+The atlas does not predict editing efficiency, safety, clinical efficacy, or patient coverage; it provides a pre-implementation target-architecture map.
 
 **Browser:** https://best916116-crypto.github.io/PrimeReplace-Atlas/  
 **Repository:** https://github.com/best916116-crypto/PrimeReplace-Atlas  
@@ -12,25 +12,103 @@ PrimeReplace Atlas addresses this gap by reorganizing disease-associated ClinVar
 
 ---
 
-## Why this resource is needed
+## What it does
 
-Large-fragment genome-writing technologies have made increasingly large insertions and replacement-like edits technically plausible. Yet technology development alone does not answer where these approaches are likely to be useful.
+PrimeReplace Atlas converts public disease-associated variant records into transcript-level architecture summaries.
 
-Disease-associated variants are catalogued as individual records, whereas large-fragment replacement hypotheses are interpreted at transcript-unit, exon-block, and coding-payload scale. PrimeReplace Atlas bridges this gap by asking:
+In practical terms, the atlas helps answer whether ClinVar P/LP records for a gene are:
 
-```text
-ClinVar P/LP records
-→ Where do these records fall on the MANE/GENCODE transcript?
-→ Do they cluster in a local exon or exon block?
-→ Are they better described by a coding-payload/boundary architecture?
-→ Is the apparent coverage dominated by donor size, sparse record support, tumor context, or mechanism complexity?
-```
+- concentrated in one exon,
+- distributed across an adjacent exon block,
+- grouped by a downstream coding-payload unit,
+- spread across a large or payload-burdened gene,
+- limited by sparse ClinVar record support,
+- affected by tumor-predisposition, repeat, noncoding, splice, isoform, or other mechanism-complex contexts.
 
-The output is an architecture map, not a single suitability score.
+The core output is an architecture map, not a yes/no feasibility call.
 
 ---
 
-## What this resource provides
+## Use it to ask
+
+Use PrimeReplace Atlas to ask questions such as:
+
+- For a disease gene, where do ClinVar P/LP records fall across the MANE/GENCODE transcript?
+- Do records cluster in a local exon or adjacent exon block?
+- Does apparent high coverage depend on a large coding payload or boundary-driven CDS coverage?
+- Is the gene record-supported enough for architecture interpretation, or is it low-record-burden?
+- Are condition-associated ClinVar record groups available for disease-facing interpretation?
+- Which downloadable source tables support the gene or condition summary?
+
+---
+
+## Open the browser
+
+Start here:
+
+https://best916116-crypto.github.io/PrimeReplace-Atlas/
+
+Suggested first-use workflow:
+
+1. Open **Gene search**.
+2. Search a gene symbol, for example `DMD`, `F9`, `ABCA4`, `CFTR`, `LDLR`, or `BRCA1`.
+3. Open the gene page.
+4. Inspect the gene-level architecture label.
+5. Review unit-level record coverage and payload/context caveats.
+6. Open **Condition facets** to inspect condition-associated ClinVar P/LP record groups.
+7. Download source tables from the **Downloads** page.
+
+---
+
+## What the atlas reports
+
+PrimeReplace Atlas reports several independent interpretation axes.
+
+| Axis | Meaning |
+|---|---|
+| Record support | Number of ClinVar P/LP records available for a gene or condition-associated record group |
+| Transcript-unit type | Single exon, adjacent exon block, or coding-payload / boundary-driven CDS unit |
+| Record-level coverage | Fraction of ClinVar records covered by a transcript unit |
+| Payload/context burden | Donor span, coding-payload burden, boundary context, or related caveat |
+| Architecture label | Public-facing summary of how the pathogenic-record burden is organized |
+| Condition facet | ClinVar condition-associated record group, where source-locked |
+
+The atlas deliberately keeps these axes separate. It does not reduce them to a single suitability score.
+
+---
+
+## Architecture labels
+
+PrimeReplace Atlas uses architecture labels to describe how pathogenic records are organized relative to transcript-unit replacement hypotheses.
+
+Primary public-facing groups include:
+
+- **Low-record-burden interpretation-limited**: genes retained in the atlas but not overinterpreted because record support is sparse.
+- **Local compact architecture**: pathogenic records concentrate in a single exon or adjacent exon block.
+- **Boundary-driven CDS coverage architecture**: records downstream of a transcript boundary can be grouped by a coding-payload hypothesis; this is a burden-aware architecture descriptor, not a functional-rescue claim.
+- **Donor-burden stress**: high theoretical record coverage may require large or context-burdened payloads.
+- **Tumor-predisposition control context**: high-burden tumor-predisposition genes retained as control/caution contexts.
+- **Mechanism-complex limitation**: repeat, noncoding, splice, isoform, or mechanism-specific biology limits transcript-unit interpretation.
+
+---
+
+## What this resource is not
+
+PrimeReplace Atlas is not:
+
+- an editing-efficiency predictor,
+- a therapeutic-efficacy predictor,
+- a safety predictor,
+- a patient-coverage or prevalence estimator,
+- a final PA-family or genome-writing modality recommender,
+- a global ranking score,
+- a clinical decision engine.
+
+PrimeReplace Atlas is a pre-implementation architecture resource for organizing public disease-associated ClinVar records relative to transcript-unit replacement hypotheses.
+
+---
+
+## Data release
 
 The current release includes:
 
@@ -50,128 +128,6 @@ The current release includes:
 
 ---
 
-## Browser quick start
-
-Open the public browser:
-
-https://best916116-crypto.github.io/PrimeReplace-Atlas/
-
-Suggested first-use workflow:
-
-1. Open **Gene search**.
-2. Search a gene symbol, for example `DMD`, `F9`, `ABCA4`, `CFTR`, `LDLR`, or `BRCA1`.
-3. Open the gene page.
-4. Inspect the gene-level architecture class.
-5. Review unit-level record coverage and payload/context caveats.
-6. Open **Condition facets** to inspect condition-associated ClinVar P/LP record groups.
-7. Download source tables from the **Downloads** page.
-
----
-
-## Local browser
-
-The browser is a static site and can also be opened locally.
-
-```bash
-git clone https://github.com/best916116-crypto/PrimeReplace-Atlas.git
-cd PrimeReplace-Atlas
-python -m http.server 8000 --directory docs
-```
-
-Then open:
-
-```text
-http://localhost:8000/
-```
-
----
-
-## Conceptual overview
-
-PrimeReplace Atlas converts public pathogenic-record burden into transcript-unit architecture:
-
-```text
-ClinVar P/LP record
-→ MANE/GENCODE transcript coordinate
-→ transcript-unit grouping
-→ record-level coverage
-→ payload/context burden
-→ architecture class
-```
-
-PrimeReplace Atlas reports independent interpretation axes:
-
-- record support
-- transcript-unit type
-- record-level coverage
-- donor payload burden
-- boundary/context caveat
-- mechanism or control class
-- condition-associated record facet, where source-locked
-
----
-
-## Transcript-unit definitions
-
-PrimeReplace Atlas defines three primary transcript-unit families.
-
-### Single-exon unit
-
-A single-exon unit asks whether ClinVar P/LP records concentrate within one exon.
-
-### Adjacent exon-block unit
-
-An adjacent exon-block unit asks whether neighboring exons form a local compact replacement architecture.
-
-### Boundary-CDS payload unit
-
-A boundary-CDS payload unit asks whether pathogenic records downstream of a transcript boundary can be grouped by a coding-payload hypothesis.
-
-This is a transcript-unit architecture descriptor. It is distinct from local exon/block replacement and requires downstream experimental validation before any implementation claim.
-
----
-
-## Architecture classes
-
-PrimeReplace Atlas uses architecture labels to describe how pathogenic records are organized relative to transcript-unit replacement hypotheses.
-
-Primary public-facing groups include:
-
-- **Low-record-burden interpretation-limited**: genes retained in the atlas but not overinterpreted because record support is sparse.
-- **Local compact architecture**: pathogenic records concentrate in a single exon or adjacent exon block.
-- **Boundary-CDS payload architecture**: records are grouped downstream of a transcript boundary by a coding-payload hypothesis.
-- **Donor-burden stress**: high theoretical record coverage may require large or context-burdened payloads.
-- **Tumor-predisposition control context**: high-burden tumor-predisposition genes retained as control/caution contexts.
-- **Mechanism-complex limitation**: repeat, noncoding, splice, isoform, or mechanism-specific biology limits transcript-unit interpretation.
-
----
-
-## Condition-associated pathogenic-record facets
-
-PrimeReplace Atlas includes condition-associated ClinVar P/LP record facets.
-
-These facets group public ClinVar records by ClinVar condition annotation where available and connect source-locked groups to transcript-unit architecture in the recovered deep-enumerated subset.
-
-Condition facets are record-level ClinVar annotation groups. They are not patient cohorts, disease prevalence estimates, patient-coverage estimates, therapeutic-coverage estimates, safety predictions, editing-efficiency predictions, or final implementation-mode recommendations.
-
----
-
-## What this resource is not
-
-PrimeReplace Atlas is not:
-
-- an editing-efficiency predictor
-- a therapeutic-efficacy predictor
-- a safety predictor
-- a patient-coverage or prevalence estimator
-- a final PA-family implementation-mode recommender
-- a global ranking score
-- a clinical decision engine
-
-PrimeReplace Atlas is a pre-implementation architecture resource for organizing public disease-associated pathogenic records relative to transcript-unit replacement hypotheses.
-
----
-
 ## Main browser pages
 
 - **Overview:** `index.html`
@@ -186,7 +142,7 @@ PrimeReplace Atlas is a pre-implementation architecture resource for organizing 
 
 ---
 
-## Main downloadable tables
+## Downloads
 
 The browser provides source tables and validation-linked summaries, including:
 
@@ -217,48 +173,72 @@ PrimeReplace Atlas uses a frozen public resource stack:
 | Transcript structure | GENCODE v49 |
 | Variant records | ClinVar GRCh38 pathogenic/likely pathogenic VCF |
 
+ClinVar, MANE, GENCODE, and other third-party public resources remain subject to their original provider terms.
+
+---
+
+## Local browser
+
+The browser is a static site and can also be opened locally.
+
+```bash
+git clone https://github.com/best916116-crypto/PrimeReplace-Atlas.git
+cd PrimeReplace-Atlas
+python -m http.server 8000 --directory docs
+```
+
+Then open:
+
+```text
+http://localhost:8000/
+```
+
 ---
 
 ## Repository structure
 
 ```text
+data/small_tables/
+  Compact release tables
+
 docs/
   Static browser pages and browser-downloadable source tables
 
-data/
-  Compact source tables and small release tables
-
-reports/
-  Resource summaries and validation-linked documentation
-
-validation/
-  Validation summaries and release checks
+figures/
+  Public figure mockups or release figures
 
 scripts/
   Source scripts used to generate and validate the release
+
+validation/
+  Validation summaries and release checks
 ```
 
 ---
 
 ## Citation
 
-Please cite the Zenodo archived release:
+If you use PrimeReplace Atlas in your work, please cite the archived release:
 
-https://doi.org/10.5281/zenodo.20174922
+> Park J, Cho SI. PrimeReplace Atlas: a transcript-unit architecture database for disease-associated large-fragment genome writing. Zenodo. https://doi.org/10.5281/zenodo.20174922
 
-A manuscript citation will be added after publication.
+A manuscript describing the atlas is in preparation. Until the manuscript is available, please cite the Zenodo DOI for the release used in your analysis.
 
 ---
 
 ## License
 
-PrimeReplace Atlas code and browser source are released under the MIT License. See `LICENSE.md` if the repository uses that filename, or `LICENSE` if it has been renamed.
+This repository uses separate licenses for software and generated data:
 
-Database tables, figures, and archived release materials are released under CC BY 4.0 unless constrained by third-party source-resource terms. ClinVar, MANE, GENCODE and other third-party public resources remain subject to their original provider terms.
+- **Code and static browser source:** MIT License. See `LICENSE`.
+- **Generated atlas tables, figures, and archived release materials:** Creative Commons Attribution 4.0 International (CC BY 4.0). See `LICENSE-DATA.md`.
 
+ClinVar, MANE, GENCODE, and other third-party public resources are not relicensed by this repository and remain subject to their original provider terms.
 
 ---
 
 ## Contact
 
-For questions about the PrimeReplace Atlas release, please contact the corresponding maintainer listed in the manuscript or repository metadata.
+For public questions, bug reports, or feature requests, please use GitHub Issues.
+
+For release correspondence, contact the project maintainer through the contact information listed in the Zenodo record.
