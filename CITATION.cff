@@ -1,10 +1,11 @@
 cff-version: 1.2.0
-message: "If you use PrimeReplace Atlas, cite the Zenodo record and repository."
-title: "PrimeReplace Atlas: transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses"
+message: "If you use PrimeReplace Atlas, please cite the Zenodo record and repository."
+title: "PrimeReplace Atlas: a transcript-unit architecture database for disease-associated large-fragment genome writing"
 version: "1.0.0"
 doi: "10.5281/zenodo.20174922"
-url: "https://github.com/best916116-crypto/PrimeReplace.git"
+url: "https://github.com/best916116-crypto/PrimeReplace-Atlas"
 date-released: "2026-05-13"
 authors:
-  - family-names: "TBD"
-    given-names: "TBD"
+  - family-names: "Park"
+    given-names: "Junjae"
+    affiliation: "Department of Brain and Cognitive Sciences, KAIST"

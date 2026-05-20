@@ -1,10 +1,10 @@
 {
-  "title": "PrimeReplace Atlas: transcript-unit architecture resource for mutation-agnostic large-fragment replacement hypotheses",
-  "description": "All-mapped transcript-unit architecture browser and source tables for interpreting mutation-agnostic large-fragment replacement hypotheses. This is a pre-implementation resource and does not predict editing efficiency, therapeutic efficacy, safety, patient coverage, or final implementation mode.",
+  "title": "PrimeReplace Atlas: a transcript-unit architecture database for disease-associated large-fragment genome writing",
+  "description": "PrimeReplace Atlas is a pre-implementation transcript-unit target-architecture database for the large-fragment genome-writing era. It maps disease-associated ClinVar pathogenic/likely pathogenic records onto MANE/GENCODE transcript units and reports record support, transcript-unit type, record-level coverage, payload/context burden, architecture class, and condition-associated record facets. The resource is restricted to record-level target architecture and does not select an editing modality, estimate patient-level prevalence, or model editing outcomes.",
   "creators": [
     {
-      "name": "TBD",
-      "affiliation": "TBD"
+      "name": "Junjae Park",
+      "affiliation": "Department of Brain and Cognitive Sciences, KAIST"
     }
   ],
   "license": "cc-by-4.0",
@@ -13,12 +13,15 @@
     "MANE",
     "GENCODE",
     "transcript architecture",
-    "large-fragment replacement",
-    "genome editing"
+    "large-fragment genome writing",
+    "genome editing",
+    "disease genomics",
+    "replacement architecture",
+    "database"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/best916116-crypto/PrimeReplace-Atlas.git",
+      "identifier": "https://github.com/best916116-crypto/PrimeReplace-Atlas",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

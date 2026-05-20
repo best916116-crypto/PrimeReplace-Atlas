@@ -252,9 +252,10 @@ A manuscript citation will be added after publication.
 
 ## License
 
-This project is released under the MIT License. See `LICENSE.md`.
+PrimeReplace Atlas code and browser source are released under the MIT License. See `LICENSE.md` if the repository uses that filename, or `LICENSE` if it has been renamed.
 
-The MIT License applies to PrimeReplace Atlas code, browser, and release materials in this repository. Third-party public data resources remain subject to their original provider terms.
+Database tables, figures, and archived release materials are released under CC BY 4.0 unless constrained by third-party source-resource terms. ClinVar, MANE, GENCODE and other third-party public resources remain subject to their original provider terms.
+
 
 ---
 
