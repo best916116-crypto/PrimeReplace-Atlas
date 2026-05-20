@@ -71,7 +71,7 @@ PrimeReplace Atlas reports several independent interpretation axes.
 | Record-level coverage | Fraction of ClinVar records covered by a transcript unit |
 | Payload/context burden | Donor span, coding-payload burden, boundary context, or related caveat |
 | Architecture label | Public-facing summary of how the pathogenic-record burden is organized |
-| Condition facet | ClinVar condition-associated record group, where source-locked |
+| Condition facet | ClinVar condition-associated record group, where available |
 
 The atlas deliberately keeps these axes separate. It does not reduce them to a single suitability score.
 
@@ -124,7 +124,7 @@ The current release includes:
 | Architecture-interpretable genes | 2,279 |
 | High-support condition-associated record groups | 3,389 |
 | High-support condition groups with recovered unit coverage | 1,278 |
-| Condition-unit coverage rows in the recovered deep-enumerated condition subset | 160,125 |
+| Condition-unit coverage rows in the recovered coverage-recovered condition subset | 160,125 |
 
 ---
 
@@ -156,7 +156,7 @@ The browser provides source tables and validation-linked summaries, including:
 - `gene_condition_unit_coverage_recovered_v1.tsv`
 - `condition_architecture_class_summary_recovered_v1.tsv`
 - `condition_layer_recovered_readiness_v1.tsv`
-- `figure4_condition_example_candidates_source_locked_v1.tsv`
+- `figure4_condition_example_candidates_traceable_v1.tsv`
 
 Large archival payloads, validation manifests, checksums, and release bundles are available through the Zenodo archive.
 
@@ -241,8 +241,7 @@ ClinVar, MANE, GENCODE, and other third-party public resources are not relicense
 
 For public questions, bug reports, or feature requests, please use [GitHub Issues](https://github.com/best916116-crypto/PrimeReplace-Atlas/issues).
 
-For release correspondence, contact:
+For release correspondence, contact the release maintainer:
 
 Junjae Park  
-Department of Brain and Cognitive Sciences, KAIST  
 [best9161@korea.ac.kr](mailto:best9161@korea.ac.kr)

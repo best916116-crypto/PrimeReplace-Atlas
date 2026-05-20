@@ -1,6 +1,0 @@
-PrimeReplace Atlas Browser condition-facet patch v1
-updated_utc=2026-05-18T02:43:19.969734+00:00
-browser_url=https://best916116-crypto.github.io/PrimeReplace-Atlas/
-github_url=https://github.com/best916116-crypto/PrimeReplace-Atlas
-zenodo_url=https://doi.org/10.5281/zenodo.20174922
-scope=condition-associated pathogenic-record facets are record-level only, not patient coverage

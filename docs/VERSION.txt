@@ -1,3 +1,5 @@
-PrimeReplace Atlas Browser v5.1_clean_link_fixed
-created_utc=2026-05-13T06:02:42.396695+00:00
-source_v5=/home/pjj/workspace/projects/PrimeReplace/paper2_prime_replace_hardened/prime_replace_browser_static_v5_clean_explainer/site
+PrimeReplace Atlas Browser release 1.0.0
+release_date=2026-05-14
+browser_url=https://best916116-crypto.github.io/PrimeReplace-Atlas/
+repository_url=https://github.com/best916116-crypto/PrimeReplace-Atlas
+zenodo_doi=10.5281/zenodo.20174922
