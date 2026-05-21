@@ -1,14 +1,21 @@
-# Data and Generated Materials License
+MIT License
 
-Generated PrimeReplace Atlas tables, figures, browser-downloadable data files, and archived release materials are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0), unless constrained by third-party source-resource terms.
+Copyright (c) 2026 PrimeReplace Atlas contributors
 
-CC BY 4.0 summary:
-- You may share and adapt the generated materials.
-- You must provide appropriate credit.
-- You must indicate if changes were made.
-- You may not imply endorsement by the PrimeReplace Atlas contributors.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-License text:
-https://creativecommons.org/licenses/by/4.0/
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Third-party source resources are not relicensed by this repository. ClinVar, MANE, GENCODE, and other public resources used by PrimeReplace Atlas remain subject to their original provider terms.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -205,7 +205,7 @@ docs/
   Static browser pages and browser-downloadable source tables
 
 figures/
-  Public figure mockups or release figures
+  Public release figures and browser-supporting visual assets
 
 scripts/
   Source scripts used to generate and validate the release
@@ -231,7 +231,7 @@ A manuscript describing the atlas is in preparation. Until the manuscript is ava
 This repository uses separate licenses for software and generated data:
 
 - **Code and static browser source:** MIT License. See `LICENSE`.
-- **Generated atlas tables, figures, and archived release materials:** Creative Commons Attribution 4.0 International (CC BY 4.0). See `LICENSE-DATA.md`.
+- **Generated atlas tables, figures, browser-downloadable data files, and archived release materials:** Creative Commons Attribution 4.0 International (CC BY 4.0). See `LICENSE-DATA.md`.
 
 ClinVar, MANE, GENCODE, and other third-party public resources are not relicensed by this repository and remain subject to their original provider terms.
 

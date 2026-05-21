@@ -1,0 +1,11 @@
+file	category	description	license	available_in_browser	available_in_zenodo
+all_mapped_gene_semantic_summary.tsv	gene_summary	Gene-level architecture summary	CC BY 4.0	yes	yes
+all_mapped_low_burden_interpretation_flags.tsv	gene_summary	Low-record-burden interpretation flags	CC BY 4.0	yes	yes
+all_mapped_semantic_class_summary.tsv	class_summary	Architecture class summary	CC BY 4.0	yes	yes
+all_mapped_unit_type_summary.tsv	unit_summary	Transcript-unit type summary	CC BY 4.0	yes	yes
+allmapped_unique_variant_coordinate_sensitivity.tsv	sensitivity	Record-level versus coordinate-level sensitivity	CC BY 4.0	yes	yes
+gene_condition_record_groups_v1.tsv	condition_facets	ClinVar condition-associated record groups	CC BY 4.0	yes	yes
+gene_condition_record_architecture_recovered_v1.tsv	condition_facets	Condition-associated architecture summary	CC BY 4.0	yes	yes
+gene_condition_unit_coverage_recovered_v1.tsv	condition_facets	Condition-unit record-level coverage	CC BY 4.0	yes	yes
+condition_architecture_class_summary_recovered_v1.tsv	condition_facets	Condition architecture class summary	CC BY 4.0	yes	yes
+condition_facet_representative_examples_v1.tsv	condition_facets	Representative condition-facet examples	CC BY 4.0	yes	yes

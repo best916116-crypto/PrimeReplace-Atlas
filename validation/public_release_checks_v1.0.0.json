@@ -1,0 +1,13 @@
+{
+  "release": "1.0.0",
+  "timestamp_utc": "2026-05-21T05:55:07.611991+00:00",
+  "passed": true,
+  "counts": {
+    "PASS": 13,
+    "FAIL": 0
+  },
+  "browser_url": "https://best916116-crypto.github.io/PrimeReplace-Atlas/",
+  "repository_url": "https://github.com/best916116-crypto/PrimeReplace-Atlas",
+  "zenodo_doi": "10.5281/zenodo.20174922",
+  "public_language_review_hits": 0
+}

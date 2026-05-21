@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-store">
 <title>Overview · PrimeReplace Atlas</title>
-<link rel="stylesheet" href="assets/style.css?v=v5.1_clean_link_fixed">
+<link rel="stylesheet" href="assets/style.css?v=release-1.0.0">
 </head>
 <body>
 <nav class="topnav"><div class="brand">PrimeReplace Atlas</div><div class="links"><a href="index.html">Overview</a><a href="start_here.html">Start</a><a href="gene_search.html">Gene search</a><a href="all_gene_index.html">Gene index</a><a href="opportunity_units.html">Units</a><a href="architecture_classes.html">Classes</a><a href="condition_facets.html">Condition facets</a><a href="methods.html">Methods</a><a href="glossary.html">Glossary</a><a href="downloads.html">Downloads</a></div></nav>
@@ -13,16 +13,13 @@
 
 <section class="hero">
 <h1>PrimeReplace Atlas Browser</h1>
-<p class="lead">All-mapped transcript-architecture lookup for mutation-agnostic large-fragment replacement hypotheses.</p>
-<p>This browser maps ClinVar P/LP record burden onto MANE/GENCODE transcript units. It is intended for gene-level interpretation after a gene or locus has already been identified.</p>
-</section>
-<div class="metrics">
-<div class="metric"><div class="metric-value">5,738</div><div class="metric-label">all-mapped genes</div></div>
-<div class="metric"><div class="metric-value">437,301</div><div class="metric-label">transcript-unit opportunity rows</div></div>
-<div class="metric"><div class="metric-value">3,459</div><div class="metric-label">low-record-burden genes</div></div>
-<div class="metric"><div class="metric-value">2,279</div><div class="metric-label">architecture-interpretable genes</div></div>
-</div>
-<div class="grid">
+
+<p>
+PrimeReplace Atlas maps ClinVar pathogenic/likely pathogenic records onto MANE/GENCODE transcript structures to show how disease-associated variant burden is distributed across exons, exon blocks, and coding-payload units.
+</p>
+<p>
+The atlas supports pre-implementation target-architecture review for large-fragment genome-writing hypotheses. It reports record support, transcript-unit type, record-level coverage, payload/context burden, architecture labels, and condition-associated record facets.
+</p>
 <div class="panel"><h3>Search a gene</h3><p>Open a gene page and read its class label, record coverage, payload summary, and concise interpretation limits.</p><p><a href="gene_search.html">Gene search →</a></p></div>
 <div class="panel"><h3>Read record coverage carefully</h3><p>Coverage is a fraction of ClinVar P/LP records mapped to a gene. It is not patient coverage.</p><p><a href="glossary.html">Glossary →</a></p></div>
 <div class="panel"><h3>Check the unit model</h3><p>Single exon, adjacent exon block, and downstream-CDS hypotheses have different assumptions.</p><p><a href="opportunity_units.html">Opportunity units →</a></p></div>
@@ -30,6 +27,6 @@
 
 </main>
 <footer class="footer">PrimeReplace Atlas Browser release 1.0.0. Record coverage is not patient coverage.</footer>
-<script src="assets/browser.js?v=v5.1_clean_link_fixed"></script>
+<script src="assets/browser.js?v=release-1.0.0"></script>
 </body>
 </html>

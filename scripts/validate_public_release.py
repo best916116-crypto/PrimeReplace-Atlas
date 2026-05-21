@@ -1,80 +1,170 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import csv
+import hashlib
 import json
+import re
+from datetime import datetime, timezone
 from pathlib import Path
 
-FORBIDDEN = [
-    "Why 306", "selected 306", "306 selected", "candidate", "shortlist", "no-go",
-    "report-card", "proxy", "pending Paper 1", "PA possible", "PA impossible",
-    "therapeutic candidate", "final mode recommendation", "patient coverage estimate",
-    "global score",
-]
+ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED = [
     "README.md",
+    "LICENSE",
+    "LICENSE-DATA.md",
     "CITATION.cff",
     ".zenodo.json",
-    "LICENSE.md",
     "docs/index.html",
     "docs/gene_search.html",
-    "docs/all_gene_index.html",
-    "docs/opportunity_units.html",
-    "docs/glossary.html",
+    "docs/condition_facets.html",
+    "docs/methods.html",
     "docs/downloads.html",
-    "docs/assets/style.css",
-    "docs/assets/browser.js",
-    "docs/data/gene_index_v5_clean.tsv",
+    "docs/citations.html",
+    "docs/VERSION.txt",
 ]
 
-SKIP = {
-    "scripts/validate_public_release.py",
-    "validation/public_language_audit.tsv",
-    "validation/public_language_hits.json",
-    "validation/public_release_validation.summary.json",
-}
+FORBIDDEN = [
+    r"/home/",
+    r"paper2_prime_replace_hardened",
+    r"cell_genomics_presubmission",
+    r"genome_biology_presubmission",
+    r"nar_fallback",
+    r"presubmission_package",
+    r"source_locked",
+    r"source-locked",
+    r"deep-enumerated",
+    r"deep_enumerated",
+    r"mockup",
+    r"v4_allmapped",
+    r"v5_clean",
+    r"v5\.1_clean_link_fixed",
+    r"v6_condition_facet",
+    r"condition-facet patch",
+    r"therapeutic candidate",
+    r"wet shortlist",
+    r"no-go",
+    r"PA possible",
+    r"PA impossible",
+]
 
-def allowed_context(ctx: str) -> bool:
-    low = ctx.lower()
-    return any(x in low for x in [
-        "not ", "no ", "does not", "do not", "forbidden", "excluded", "removed", "legacy",
-        "not patient coverage", "not a patient", "not an estimate"
-    ])
+SCAN = [
+    "README.md",
+    "CITATION.cff",
+    ".zenodo.json",
+    "LICENSE",
+    "LICENSE-DATA.md",
+    "docs/*.html",
+    "docs/VERSION.txt",
+    "docs/downloads/*.tsv",
+    "reports/*.md",
+    "reports/*.tsv",
+    "validation/*.json",
+    "validation/*.tsv",
+    "figures/*.svg",
+]
+
+def sha256(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+def collect_scan_files() -> list[Path]:
+    files = []
+    for pat in SCAN:
+        files.extend(ROOT.glob(pat))
+    return sorted(set([p for p in files if p.is_file()]))
 
 def main() -> int:
-    root = Path(__file__).resolve().parents[1]
-    failures = []
+    validation = ROOT / "validation"
+    validation.mkdir(exist_ok=True)
+
+    checks = []
     for rel in REQUIRED:
-        if not (root / rel).exists():
-            failures.append(f"missing required file: {rel}")
+        p = ROOT / rel
+        checks.append({
+            "check": "required_file",
+            "item": rel,
+            "status": "PASS" if p.exists() else "FAIL",
+            "detail": rel,
+        })
 
-    hits = []
-    for p in root.rglob("*"):
-        if not p.is_file() or ".git" in p.parts:
-            continue
-        rel = str(p.relative_to(root))
-        if rel in SKIP:
-            continue
-        if p.suffix.lower() not in {".md", ".html", ".txt", ".json", ".tsv", ".py", ".sh", ".cff"}:
-            continue
-        text = p.read_text(errors="replace")
-        low = text.lower()
-        for term in FORBIDDEN:
-            idx = low.find(term.lower())
-            if idx >= 0:
-                ctx = text[max(0, idx-100):idx+220].replace("\n", " ")
-                if not allowed_context(ctx):
-                    hits.append({"file": rel, "term": term, "context": ctx})
+    audit_rows = []
+    generated_validation_files = {
+        "public_language_audit_v1.0.0.tsv",
+        "public_release_checks_v1.0.0.tsv",
+        "public_release_checks_v1.0.0.json",
+        "checksum_manifest_v1.0.0.tsv",
+    }
 
-    if hits:
-        failures.append(f"public-language hits: {len(hits)}")
+    for p in collect_scan_files():
+        if p.name in generated_validation_files:
+            continue
+        text = p.read_text(encoding="utf-8", errors="replace")
+        for pat in FORBIDDEN:
+            m = re.search(pat, text, flags=re.I)
+            if m:
+                audit_rows.append({
+                    "file": str(p.relative_to(ROOT)),
+                    "pattern": pat,
+                    "status": "REVIEW",
+                    "context": text[max(0, m.start()-80):m.end()+160].replace("\n", " "),
+                })
 
-    (root / "validation").mkdir(exist_ok=True)
-    (root / "validation" / "public_language_hits.json").write_text(json.dumps(hits, indent=2), encoding="utf-8")
-    result = {"passed": not failures, "failures": failures, "public_language_hits": len(hits)}
-    (root / "validation" / "public_release_validation.summary.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
-    print(json.dumps(result, indent=2))
-    return 0 if result["passed"] else 1
+    with (validation / "public_language_audit_v1.0.0.tsv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["file", "pattern", "status", "context"], delimiter="\t")
+        w.writeheader()
+        for r in audit_rows:
+            w.writerow(r)
+
+    checksum_rows = []
+    for p in collect_scan_files():
+        checksum_rows.append({
+            "path": str(p.relative_to(ROOT)),
+            "bytes": p.stat().st_size,
+            "sha256": sha256(p),
+        })
+
+    with (validation / "checksum_manifest_v1.0.0.tsv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["path", "bytes", "sha256"], delimiter="\t")
+        w.writeheader()
+        for r in checksum_rows:
+            w.writerow(r)
+
+    checks.append({
+        "check": "public_language_audit",
+        "item": "forbidden_terms",
+        "status": "PASS" if not audit_rows else "FAIL",
+        "detail": f"review_hits={len(audit_rows)}",
+    })
+
+    summary = {
+        "release": "1.0.0",
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "passed": all(c["status"] == "PASS" for c in checks),
+        "counts": {
+            "PASS": sum(c["status"] == "PASS" for c in checks),
+            "FAIL": sum(c["status"] == "FAIL" for c in checks),
+        },
+        "browser_url": "https://best916116-crypto.github.io/PrimeReplace-Atlas/",
+        "repository_url": "https://github.com/best916116-crypto/PrimeReplace-Atlas",
+        "zenodo_doi": "10.5281/zenodo.20174922",
+        "public_language_review_hits": len(audit_rows),
+    }
+
+    (validation / "public_release_checks_v1.0.0.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+
+    with (validation / "public_release_checks_v1.0.0.tsv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["check", "item", "status", "detail"], delimiter="\t")
+        w.writeheader()
+        for c in checks:
+            w.writerow(c)
+
+    print(json.dumps(summary, indent=2))
+    return 0 if summary["passed"] else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())
